@@ -1,0 +1,240 @@
+{
+  "release": "final-sd-20261031-r12",
+  "cards": [
+    {
+      "id": "weak-punch",
+      "name": "약펀치",
+      "type": "attack",
+      "range": [
+        0
+      ],
+      "speed": 5,
+      "damage": 2,
+      "copies": 2,
+      "effect": "빠른 근거리 견제",
+      "fronts": [
+        {
+          "moveMode": "dash",
+          "frontId": "weak-punch-dash"
+        },
+        {
+          "moveMode": "dash",
+          "frontId": "weak-punch-dash-2"
+        }
+      ]
+    },
+    {
+      "id": "strong-punch",
+      "name": "강펀치",
+      "type": "attack",
+      "range": [
+        0
+      ],
+      "speed": 3,
+      "damage": 4,
+      "copies": 2,
+      "effect": "근거리 강타",
+      "fronts": [
+        {
+          "moveMode": "dash",
+          "frontId": "strong-punch-dash"
+        },
+        {
+          "moveMode": "backstep",
+          "frontId": "strong-punch-backstep"
+        }
+      ]
+    },
+    {
+      "id": "weak-kick",
+      "name": "약킥",
+      "type": "attack",
+      "range": [
+        0,
+        1
+      ],
+      "speed": 4,
+      "damage": 2,
+      "copies": 2,
+      "effect": "근거리와 중거리 견제",
+      "fronts": [
+        {
+          "moveMode": "dash",
+          "frontId": "weak-kick-dash"
+        },
+        {
+          "moveMode": "dash",
+          "frontId": "weak-kick-dash-2"
+        }
+      ]
+    },
+    {
+      "id": "strong-kick",
+      "name": "강킥",
+      "type": "attack",
+      "range": [
+        0,
+        1
+      ],
+      "speed": 2,
+      "damage": 5,
+      "copies": 2,
+      "effect": "느린 근·중거리 강타",
+      "fronts": [
+        {
+          "moveMode": "dash",
+          "frontId": "strong-kick-dash"
+        },
+        {
+          "moveMode": "backstep",
+          "frontId": "strong-kick-backstep"
+        }
+      ]
+    },
+    {
+      "id": "launcher",
+      "name": "띄우기 공격",
+      "type": "attack",
+      "special": true,
+      "launch": true,
+      "range": [
+        0
+      ],
+      "speed": 3,
+      "damage": 2,
+      "copies": 2,
+      "effect": "단독 적중 2턴 · 동시 적중 1턴 경직",
+      "libraryEffect": "띄우기만 적중하면 상대 2턴, 양쪽 공격이 모두 적중하면 상대 1턴 경직.",
+      "fronts": [
+        {
+          "moveMode": "dash",
+          "frontId": "launcher-dash"
+        },
+        {
+          "moveMode": "backstep",
+          "frontId": "launcher-backstep"
+        }
+      ]
+    },
+    {
+      "id": "projectile",
+      "name": "장풍기",
+      "type": "attack",
+      "special": true,
+      "range": [
+        0,
+        1,
+        2
+      ],
+      "speed": 3,
+      "damage": 3,
+      "copies": 2,
+      "effect": "모든 거리 공격, 점프에 회피됨, 장풍기끼리 상쇄",
+      "fronts": [
+        {
+          "moveMode": "dash",
+          "frontId": "projectile-dash"
+        },
+        {
+          "moveMode": "backstep",
+          "frontId": "projectile-backstep"
+        }
+      ]
+    },
+    {
+      "id": "jump-attack",
+      "name": "점프 공격",
+      "type": "attack",
+      "jump": true,
+      "range": [
+        1
+      ],
+      "speed": 3,
+      "damage": 3,
+      "copies": 2,
+      "effect": "중거리에서만 적중, 대공기 외 공격 회피, 판정 후 1단계 접근",
+      "fronts": [
+        {
+          "moveMode": "dash",
+          "frontId": "jump-attack-dash"
+        },
+        {
+          "moveMode": "backstep",
+          "frontId": "jump-attack-backstep"
+        }
+      ]
+    },
+    {
+      "id": "throw",
+      "name": "잡기",
+      "type": "throw",
+      "range": [
+        0
+      ],
+      "speed": 3,
+      "damage": 3,
+      "copies": 2,
+      "effect": "가드 무시, 적중 시 원거리, 잡기끼리 상쇄",
+      "fronts": [
+        {
+          "moveMode": "guard",
+          "frontId": "throw-guard"
+        },
+        {
+          "moveMode": "guard",
+          "frontId": "throw-guard-2"
+        }
+      ]
+    },
+    {
+      "id": "anti-air",
+      "name": "대공기",
+      "type": "attack",
+      "special": true,
+      "antiAir": true,
+      "range": [
+        0
+      ],
+      "speed": 4,
+      "damage": 3,
+      "copies": 2,
+      "effect": "근거리 공격, 점프 상대 전 거리 적중·1턴 경직",
+      "fronts": [
+        {
+          "moveMode": "dash",
+          "frontId": "anti-air-dash"
+        },
+        {
+          "moveMode": "backstep",
+          "frontId": "anti-air-backstep"
+        }
+      ]
+    },
+    {
+      "id": "super",
+      "name": "초필살기 / 기 모으기",
+      "type": "super",
+      "combined": true,
+      "range": [
+        0,
+        1
+      ],
+      "speed": 2,
+      "speedLabel": "특수",
+      "damage": 9,
+      "copies": 2,
+      "effect": "기 모으기: 성공 시 충전 / 초필살기: 충전 중 사용",
+      "libraryEffect": "기 모으기: 성공 시 카드를 앞면으로 자기 앞에 두고 충전. 초필살기: 충전 중 사용. 이동 후 일반 공격·잡기·기 모으기보다 우선 판정하며, 가드에 막히고 점프에 회피됨. 적중 시 상대 행동 중단·원거리 변경. 사용 후 두 카드 버림.",
+      "fronts": [
+        {
+          "moveMode": null,
+          "frontId": "super-1"
+        },
+        {
+          "moveMode": null,
+          "frontId": "super-2"
+        }
+      ]
+    }
+  ]
+}

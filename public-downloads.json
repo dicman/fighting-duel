@@ -1,0 +1,26 @@
+{
+  "downloads": [
+    {
+      "id": "base",
+      "title": "2인용 기본 세트",
+      "path": "assets/pnp/print/duel-complete-a4.pdf",
+      "version": "1.0 · 카드 r12",
+      "updated": "2026-11-01",
+      "pages": 12,
+      "sheets": 6,
+      "cards": 50,
+      "bytes": 31484385
+    },
+    {
+      "id": "solo",
+      "title": "솔로 추가 세트 · 시험판",
+      "path": "assets/pnp/print/duel-solo-deck-a4.pdf",
+      "version": "솔로 v0.2 시험판",
+      "updated": "2026-11-01",
+      "pages": 4,
+      "sheets": 2,
+      "cards": 13,
+      "bytes": 431582
+    }
+  ]
+}
